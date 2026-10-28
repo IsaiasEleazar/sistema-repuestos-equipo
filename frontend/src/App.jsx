@@ -7,11 +7,13 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Listado />} />
-        <Route path="/nuevo" element={<FormularioRepuesto />} />
-        <Route path="/repuesto/:id" element={<FormularioRepuesto />} /> {/* Ruta dinámica */}
-      </Routes>
+      <div style={{ padding: '30px 0' }}> 
+        <Routes>
+          <Route path="/" element={<Listado />} />
+          <Route path="/nuevo" element={<FormularioRepuesto />} />
+          <Route path="/repuesto/:id" element={<FormularioRepuesto />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
